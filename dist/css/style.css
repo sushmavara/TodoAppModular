@@ -1,0 +1,293 @@
+/*************  Default Settings  **************/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Bitter', Helvetica, sans-serif;
+}
+
+.backgroundWhite
+{
+    background-color: white;
+}
+
+/*************  NAVIGATION BAR  **************/
+
+nav, .navLinks{
+    display:flex;
+    justify-content: space-around;
+}
+
+nav{
+    min-height: 8vh;
+    background-color: rgb(18, 90, 131);
+    align-items: center;
+}
+
+.menu{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(224, 223, 223);
+    font-size: 22px;
+}
+
+.navLinks{
+    width:35%;
+}
+
+.navLinks li{
+    list-style: none;
+} 
+
+.navLinks a{
+    color: rgb(224, 223, 223);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/************* Empty Content **************/
+.emptyContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    color: rgb(47, 43, 43);
+}
+
+/************* Container **************/
+.container{
+    padding:0 10%;
+    padding-top:2%;
+}
+
+/************* MARGINS **************/
+.marginLeft60 {
+    margin-left: 60px;
+}
+
+.marginLeft20 {
+    margin-left: 20px;
+}
+
+/******************** TODO APP **********************/
+
+/************* TODO Actions **************/
+
+.todoActionBar,.updateActions{
+    display: flex;
+}
+
+.todoActionBar
+{
+    justify-content: space-between;
+    width:100%;
+}
+
+.todoActionBar a {
+    height: 45px;
+    padding: 10px 10px;
+    background-color:#86BDD1;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.todoActionBar a:hover{
+    background-color:rgb(115, 161, 179);
+}
+
+.addNewTodo{
+    margin-left: 6%;
+}
+
+.updateActions{
+    justify-content: space-evenly;
+    width:35%;
+}
+
+hr{
+    margin-top:2%;
+    height:1px; 
+    border:none;
+    background-color:rgb(218, 200, 200);
+}
+
+.inactiveLink {
+    background-color:grey;
+    pointer-events: none;
+    cursor: default;
+}
+
+/************* TODO List **************/
+
+.todoListContainer{
+     margin-left:5%;
+     margin-right: 3%;
+     font-size:18px;
+     margin-bottom: 5px;
+     height: 50px;
+     display: none;
+     color: rgb(61, 55, 55);
+}
+
+.todoListContainer li{
+    background-color: #f8f9fd;
+    list-style: none;
+    border:1px solid rgb(218, 200, 200);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.todoListContainer li input[type="checkbox"]
+{
+    transform : scale(1.4);
+}
+
+.todoListContainer .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    border:1px solid rgb(218, 200, 200);
+    background-color: #f8f9fd;
+    padding-right: 250px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.todoListContainer .item div{
+    display: inline-block;
+    margin-left: 59px;
+    font-size: 16px;
+}
+
+.title,.dueDate,.description{
+
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.title,.dueDate{
+    min-width: 20%;
+    width: 20%; 
+}
+
+.title{
+    padding-left: 32px;
+}
+
+.description{
+    min-width: 25%;
+    width: 25%;
+    padding-left: 22px;
+}
+
+.dueDate{
+    padding-left:10px;
+}
+
+.icon{
+    margin-left:30px;
+    font-size:20px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.todoComplete{
+    text-decoration: line-through;
+    color:red;
+}
+
+/************* MODALS **************/
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(199, 221, 230);
+    padding: 1%;
+    width: 30%;
+    border-radius:10px;
+    color: rgb(34, 31, 31);
+}
+.closeButton {
+    float: right;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    color: grey;
+}
+.closeButton:hover {
+    color:  rgb(47, 43, 43);
+}
+
+.showModal {
+    display: block;
+}
+
+.modalContent h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalContent div {
+    margin: 25px 20px;
+}
+
+.modalContent .inputElement{
+    width:100%;
+    height: 40px;
+    font-size: 16px;
+    padding:10px;
+    margin-top:2px;
+    color:rgb(80, 70, 70);
+    border-radius: 5px;
+}
+.modalContent button{
+    width:20%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(242, 247, 251);
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+.modalContent button:hover,.modalContent button:active{
+   background-color: rgb(212, 234, 253);
+   color: rgb(80, 70, 70);
+}
+
+.errorMessage{
+    margin-top:2px;
+    font-size:12px;
+    color:rgb(156, 80, 80);
+    visibility: hidden;
+    height: 8px;
+}
+
+
+/************* CALENDAR APP *****************/
