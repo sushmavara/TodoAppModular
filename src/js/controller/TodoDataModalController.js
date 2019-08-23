@@ -1,7 +1,7 @@
 import {DataModalDomStrings} from '../domSelectors/dataModalElementsSelector'
 import {ACTION_BUTTON_CLASS_NAME} from '../constants/todoActionConstants'
 
-const DataModalController = (function(){
+const TodoDataModalController = (function(){
 
     const attachDataModal = function(modalToAttach,ToDoManager){
         document.body.appendChild(modalToAttach);
@@ -98,4 +98,4 @@ const DataModalController = (function(){
 
 })();
 
-export default DataModalController;
+export default TodoDataModalController;

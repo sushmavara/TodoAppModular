@@ -1,7 +1,6 @@
 import {todoContainerSelectors} from '../domSelectors/todoAppContainerSelector'
 import todoItemTemplate from '../templates/todoElementTemplate'
 import {ACTION_BUTTON_CLASS_NAME} from '../constants/todoActionConstants'
-import TodoManager from '../controller/Manager'
 
 const TodoItemController = (function(){
 

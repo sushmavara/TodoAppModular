@@ -1,4 +1,4 @@
-import TodoManager from './Manager'
+import TodoManager from './TodoManager'
 
 const App = (function(TodoManager){
     const initializeTodoManager = function(){

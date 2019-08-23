@@ -1,6 +1,6 @@
-import TodoItemController from './ItemController'
-import DataModalController from './DataModalController'
-import TodoActionBarController from './ActionBarController'
+import TodoItemController from './TodoItemController'
+import TodoDataModalController from './TodoDataModalController'
+import TodoActionBarController from './TodoActionBarController'
 import ToDoItem from '../models/ToDoItem'
 import {MODALS_CLASS_NAME} from '../constants/dataModalConstants'
 import {MODAL_TEMPLATE} from '../constants/dataModalConstants'
@@ -102,6 +102,6 @@ const ToDoManager = (function(todoItemController,toDoDataModalController,todoAct
         renderTodoList:renderTodoList
 
     }
-})(TodoItemController,DataModalController,TodoActionBarController);
+})(TodoItemController,TodoDataModalController,TodoActionBarController);
 
 export default ToDoManager;
